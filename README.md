@@ -1,13 +1,15 @@
 # Student Career Counselor Chatbot
 
-This project is a Streamlit-based application that utilizes a generative AI model to simulate a Student Career Counselor chatbot. Users can interact with the chatbot by entering messages, and the bot responds accordingly.
+This project is a Streamlit-based application that utilizes Google Gemini AI and Machine Learning to simulate a Student Career Counselor chatbot. Users can interact with the chatbot for career guidance, personalized skill-based recommendations, and intelligent responses.
 
 ## Setup
 
 1. *Install Dependencies:*
    ```bash
    pip install streamlit
-   pip install google.generativeai  
+   pip install google.generativeai 
+   pip install pandas
+   pip install scikit-learn 
    ```
 
 2. *Configure API Key:*
@@ -18,7 +20,7 @@ This project is a Streamlit-based application that utilizes a generative AI mode
 
 3. *Run the Application:*
    ```bash
-   streamlit run AI-Cousellor.py
+   streamlit run app.py
    ```
 
   
@@ -27,14 +29,24 @@ This project is a Streamlit-based application that utilizes a generative AI mode
 
 1. Open the application in a web browser.
 
-2. Enter your message in the input box.
+2. Fill in your profile details (skills, education, experience, etc.).
 
-3. The chatbot will respond with a simulated Student Career Counselor response.
+3. Interact with the AI chatbot by entering career-related queries.
+
+4. The chatbot will provide career guidance, skill-based recommendations, and empathetic responses.
 
 ## Project Structure
 
 - AI-Councellor.py: The main script containing the Streamlit application code.
 - requirements.txt: A file listing the project dependencies.
+
+📁 AI Counselor
+│── app.py                  # Main Streamlit app
+│── requirements.txt         # Dependencies list
+│── .streamlit/
+│    └── secrets.toml        # API key storage (local use)
+└── README.md                # Documentation
+
 
 ## Notes
 
@@ -46,7 +58,4 @@ This project is a Streamlit-based application that utilizes a generative AI mode
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [Google Generative AI Documentation](https://generativeai.dev/docs/)
 
-## Contributors
-<a href="https://github.com/alokverma18/ai-counselor/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=alokverma18/ai-counselor" />
-</a>
+
